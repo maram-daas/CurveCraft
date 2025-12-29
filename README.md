@@ -2,7 +2,7 @@
 
 **Transform your intuition into mathematics.**
 
-CurveCraft is an interactive Python application that bridges the gap between visual creativity and mathematical precision. Draw freehand curves and watch them transform into rigorous mathematical representations, including:
+Draw freehand curves and watch them transform into rigorous mathematical representations, including:
 
 - **Piecewise parametric cubic spline equations**
 - **Fourier series approximations** for closed curves
