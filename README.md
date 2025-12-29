@@ -15,7 +15,7 @@ Built with **Tkinter**, **Matplotlib**, **NumPy**, and **SciPy**, CurveCraft is 
 
 ### 🖌 Interactive Drawing
 - Click and drag to draw curves directly on a Cartesian grid
-- Double-click or release to finish drawing
+- Release to finish drawing
 - Automatic smoothing and arc-length parameterization
 
 ### 📐 Parametric Curve Extraction
@@ -36,13 +36,10 @@ Built with **Tkinter**, **Matplotlib**, **NumPy**, and **SciPy**, CurveCraft is 
 ### 📊 Fourier Coefficient Table
 - Scrollable table displaying:
   - Cosine and sine coefficients for x(t) and y(t)
-- Exportable and copyable equations
 
 ### 🎛 Customizable Canvas
 - Adjustable X and Y ranges
 - Preset grid sizes (1×1, 2×2, π×π, 10×10)
-- Clean, presentation-ready plotting style
-
 ---
 
 ## 🧠 How It Works
@@ -63,19 +60,21 @@ Built with **Tkinter**, **Matplotlib**, **NumPy**, and **SciPy**, CurveCraft is 
 ```bash
 git clone https://github.com/yourusername/curvecraft.git
 cd curvecraft
+```
 2. Install dependencies
-bash
 Copy code
+```bash
 pip install -r requirements.txt
+```
 Note: Tkinter is included with most standard Python installations.
 
 ▶ Running the App
-bash
-Copy code
-python main.py
-(or whatever filename contains the main() function)
+```bash
+python CurveCraft.py
+```
 
 🧪 Controls & Tips
+
 Draw slowly for smoother splines
 
 Close your curve to unlock Fourier mode
@@ -87,7 +86,8 @@ Use presets to quickly change scale
 Click Copy All to export equations
 
 📦 Dependencies
-Python 3.8+
+
+Python 3.12
 
 NumPy
 
@@ -99,9 +99,8 @@ Tkinter (standard library)
 
 📜 License
 This project is released under the MIT License.
-You are free to use, modify, and distribute it.
 
 🙌 Acknowledgements
-Inspired by mathematical visualization tools, spline interpolation theory, and Fourier analysis techniques.
+Deriving functions expression just by their visual representations has always been an idea i wanted to apply in real since highschool, now i finally got the mathematical and technical knowledge i made this project a reality.
 
 Happy curve crafting! 🎨📐
