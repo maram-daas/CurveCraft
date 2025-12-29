@@ -1,56 +1,41 @@
 # CurveCraft – Parametric Expression Analyzer
 
-CurveCraft is an interactive Python application that allows users to **draw freehand curves** and automatically transform them into **mathematical representations**, including:
+**Transform your intuition into mathematics.**
 
-- Piecewise **parametric cubic spline equations**
+CurveCraft is an interactive Python application that bridges the gap between visual creativity and mathematical precision. Draw freehand curves and watch them transform into rigorous mathematical representations, including:
+
+- **Piecewise parametric cubic spline equations**
 - **Fourier series approximations** for closed curves
-- Visual comparison between original and reconstructed curves
-- A detailed, scrollable **Fourier coefficient table**
+- **Visual comparison tools** between original and reconstructed curves
+- **Detailed coefficient tables**
 
-Built with **Tkinter**, **Matplotlib**, **NumPy**, and **SciPy**, CurveCraft is designed for learning, experimentation, and mathematical visualization.
+Built with **Tkinter**, **Matplotlib**, **NumPy**, and **SciPy**.
 
 ---
 
 ## ✨ Features
 
 ### 🖌 Interactive Drawing
-- Click and drag to draw curves directly on a Cartesian grid
-- Release to finish drawing
+- Click and drag to draw curves on a Cartesian grid
 - Automatic smoothing and arc-length parameterization
 
 ### 📐 Parametric Curve Extraction
 - Converts drawings into **piecewise cubic splines**
-- Displays explicit polynomial expressions for each segment:
-  - \( x(t) \)
-  - \( y(t) \)
+- Displays explicit polynomial expressions for x(t) and y(t)
 - Shows parameter intervals and coefficients
 
-### 🔄 Fourier Series Analysis (Closed Curves)
-- Automatically detects closed curves
-- Computes Fourier series using FFT
-- Adjustable number of harmonics (3–50)
-- Visual comparison:
-  - Original spline
-  - Fourier approximation
+### 🔄 Fourier Series Analysis
+- Automatic closed-curve detection
+- FFT-based computation with adjustable harmonics (3–50)
+- Side-by-side visualization of original vs. reconstruction
 
-### 📊 Fourier Coefficient Table
-- Scrollable table displaying:
-  - Cosine and sine coefficients for x(t) and y(t)
+### 📊 Coefficient Display
+- Scrollable Fourier table with cosine and sine coefficients
+- Copy functionality for equations and data
 
 ### 🎛 Customizable Canvas
-- Adjustable X and Y ranges
-- Preset grid sizes (1×1, 2×2, π×π, 10×10)
----
-
-## 🧠 How It Works
-
-1. User draws a curve on the canvas
-2. Points are smoothed and re-parameterized by arc length
-3. Cubic splines are fit to x(t) and y(t)
-4. If the curve is closed:
-   - FFT is applied
-   - Fourier coefficients are extracted
-   - Series reconstruction is displayed
+- Adjustable X and Y axis ranges
+- Quick presets: 1×1, 2×2, π×π, 10×10
 
 ---
 
@@ -61,46 +46,57 @@ Built with **Tkinter**, **Matplotlib**, **NumPy**, and **SciPy**, CurveCraft is 
 git clone https://github.com/yourusername/curvecraft.git
 cd curvecraft
 ```
-2. Install dependencies
-Copy code
+
+### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-Note: Tkinter is included with most standard Python installations.
 
-▶ Running the App
+**Note:** Tkinter comes with standard Python installations.
+
+---
+
+## ▶️ Running the App
+
 ```bash
-python CurveCraft.py
+python curvecraft.py
 ```
 
-🧪 Controls & Tips
+---
 
-Draw slowly for smoother splines
+## 🧪 Usage Tips
 
-Close your curve to unlock Fourier mode
+- **Draw smoothly** for cleaner splines
+- **Close your curve** (end near start) to unlock Fourier analysis
+- **Adjust harmonics** to balance accuracy vs. simplicity
+- **Use appropriate scale** – switch presets for different contexts
 
-Increase harmonics for better Fourier accuracy
+---
 
-Use presets to quickly change scale
+## 📦 Dependencies
 
-Click Copy All to export equations
+- Python 3.12
+- NumPy
+- SciPy
+- Matplotlib
+- Tkinter (standard library)
 
-📦 Dependencies
+```bash
+pip install numpy scipy matplotlib
+```
 
-Python 3.12
+---
 
-NumPy
+## 📜 License
 
-SciPy
+MIT License 
 
-Matplotlib
+---
 
-Tkinter (standard library)
+## 🙌 Acknowledgements
 
-📜 License
-This project is released under the MIT License.
+This project started as a high school dream: **deriving equations from curves by sight alone.** Years later, with the right mathematical and technical knowledge, it's finally real.
 
-🙌 Acknowledgements
-Deriving functions expression just by their visual representations has always been an idea i wanted to apply in real since highschool, now i finally got the mathematical and technical knowledge i made this project a reality.
+**Happy curve crafting!** 🎨📐✨
 
-Happy curve crafting! 🎨📐
+---
