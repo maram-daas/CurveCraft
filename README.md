@@ -89,7 +89,7 @@ pip install numpy scipy matplotlib
 
 ## 📜 License
 
-MIT License 
+Apache 2.0 License 
 
 ---
 
